@@ -3,18 +3,25 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SmartWFM's documentation!
-====================================
+########################
+Willkommen bei SmartWFM!
+########################
 
-Contents:
+SmartWFM ist ein webbasierter Dateimanager, welcher auf dem `ExtJS <http://www.sencha.com/products/extjs/>`_ Framework basiert. Durch sein flexibles Backend und durch die Plugin und Widget-Struktur ist er sehr leicht erweiterbar.
+
+Features
+========
+
+* leicht erweiterbar durch Plugins
+* leicht erweiterbar durch Widgets
+* Unterstützung von unterschiedlichen Sprachen
+* ... und vieles mehr
+
+
+Dokumentation
+=============
 
 .. toctree::
-   :maxdepth: 2
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   :maxdepth: 4
+   
+   users/index  
