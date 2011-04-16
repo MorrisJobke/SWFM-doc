@@ -24,4 +24,5 @@ Dokumentation
 .. toctree::
    :maxdepth: 4
    
-   users/index  
+   users/index
+   devel/index

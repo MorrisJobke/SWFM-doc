@@ -34,22 +34,22 @@ Einstellungen
 	* - Name
 	  - Typ
 	  - Beschreibung
-	* - basepath
+	* - **basepath**
 	  - String
 	  - Wurzelverzeichnis, aus dem man innerhalb des SmartWFM nicht herausnavigieren kann
-	* - mimetype_detection_mode
+	* - **mimetype_detection_mode**
 	  - String
 	  - Art der MIME-type-Erkennung, mögliche Werte sind:
 		:internal:	Verwendung der PHP-Funktion mime_content_type
 		:cmd_file:	file-Kommando wird auf die Datei angewendet
 		:file:		Endung der Datei gilt als Kriterium für den MIME-type
-	* - commands_path
+	* - **commands_path**
 	  - String
 	  - Pfad zum commands-Verzeichnis des Backends
-	* - commands
+	* - **commands**
 	  - Array
 	  - Liste mit den Dateinamen (ohne die Endung .php) der Backendplugins, die geladen werden sollen
-	* - filesystem_mode
+	* - **filesystem_mode**
 	  - String
 	  - Art des Dateisystems, mögliche Werte sind:
 		:local:		Benutzung der Standard-Dateisystemoperationen von PHP
@@ -65,22 +65,79 @@ Backend-Plugins (Commands)
 --------------------------
 
 .. list-table::
+	:widths: 20 20 20 40
 	:header-rows: 1
 	
 	* - Name
 	  - Funktionen
 	  - Frontend-Module, die diese Funktionen benötigen
 	  - Einstellungen (in config/local.php)
-	* - afs_special_actions	
+	* - **afs_special_actions**
 	  - 
 	  	* Quota auslesen
 	  	* AFS-Rechte lesen und setzen
 	  	* AFS-Gruppen lesen, erstellen und entfernen
 		* AFS-Gruppen-Mitgliedschaften lesen, hinzufügen und entfernen
 	  - 
-	  	* afs_actions (Plugin)
+	  	* **afs_actions** (Plugin)
 	  - 
+	* - **afs_actions**
+	  - 
+	  	* Archive erstellen, lesen und entpacken
+	  - 
+	  	* **archives** (Plugin)
+	  - 
+	* - **base_actions**
+	  - 
+	  	* Verzeichnisse erstellen und löschen
+	  	* Verzeichnisinhalt auflisten
+	  	* Dateien verschieben, kopieren, löschen, umbenennen
+	  - 
+	  	* **base_actions** (Plugin)
+	  	* **browser** (Widget)
+	  	* **treemenu** (Widget)
+	  - 
+	* - **base_direct_commands**
+	  -
+	  	* Hoch- und Herunterladen von Dateien
+	  	* Quellcode-Highlighting
+	  - 
+	  	* **base_actions** (Plugin)
+	  	* **esource_viewer** (Plugin)
+	  	* **image_viewer** (Plugin)
+	  - 
+	  	:use_x_sendfile (Boolean): 
+	  		legt fest, ob x-sendfile für den Download von Dateien verwendet wird
+	  		
+	  		Hinweise (unter Apache 2.x):
+	  		
+		  	*mod_xsendfile* installieren und folgende Einstellungen vornehmen::
+		  	
+			  	XSendFile On
+				XSendFileAllowAbove On
+	
+	* - **new_file**
+	  -
+	  - 
+	  	* **new_file** (Plugin)
+	  -
+	* - **search_actions**
+	  -
+	  	* Suche nach Dateien
+	  - 
+	  	* **search** (Widget)
+	  -
+	* - **setting_actions**
+	  -
+	  	* speichern und laden der Frontend-Einstellungen
+	  -
+	  	* **setting** (Plugin)
+	  -
+	  	:setting_filename (String): 
+	  		Dateiname für Datei, die die SWFM-Frontend-Einstellungen des Benutzers speichert
 
+			Pfad für mehrere Benutzer dynamisch anpassen - Bsp.: "/home/".$_SERVER['PHP_AUTH_USER']."/.smartwfm.ini"
+		  	
 Frontend
 ========
 
