@@ -9,3 +9,4 @@ Entwicklerhandbuch
     structure
     backendapi
     repositories
+    tips

@@ -143,3 +143,30 @@ Frontend
 
 * Frontend herunterladen
 * Inhalt dieses Archives in einen Ordner auf dem Webserver entpacken (z.B. **/var/www/swfm**), welcher per Browser erreichbar ist
+
+
+Beispielkonfiguration
+---------------------
+
+.. code-block:: guess
+
+	<script type="text/javascript">
+		SmartWFM.init({
+			'command_url': '../php/index.php',
+			'lang': lang,
+			'plugins' : [
+				'base_actions'
+			],
+			'widgets' : [
+				'treemenu',
+				'browser',
+			],
+			'menu.main.file': ['newtab'],
+			'menu.main.edit': ['copy', 'move', 'paste', 'rename', 'delete'],
+			'menu.main.view': ['iconview', 'listview'],
+			'menu.main.tools': [],
+			'menu.main.extras': [],
+			'widget.treemenu.menu.context': ['treemenu-newtab'],
+			'widget.browser.menu.context': ['copy', 'move', 'paste', 'rename', '|', 'delete'],
+		});
+	</script>
