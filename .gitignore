@@ -1,6 +1,8 @@
-*~
-.project
-.pydevproject
-.settings
+# build path
 _build
-.externalToolBuilders
+
+# vim swap files
+*.*.swp
+
+# backup files
+*~
