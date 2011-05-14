@@ -22,7 +22,7 @@ Dokumentation
 =============
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
    
    users/index
    devel/index

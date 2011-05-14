@@ -9,7 +9,7 @@ Backend
 
 Es ist möglich verschiedene Backends mit dem SWFM-Frontend zu benutzen. Zur Zeit gibt es leider nur ein Backend in PHP:
 
-Vorraussetzungen
+Voraussetzungen
 ----------------
 
 * Webserver mit PHP (apache, lighttpd, etc.)
