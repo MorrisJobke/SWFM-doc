@@ -67,7 +67,7 @@ Example::
 	  'www:www-user': 'rl',
 	  'test': 'rlidwka'
 	}
-	
+
 Errors
 ------
 
@@ -232,7 +232,7 @@ Example::
 	  "test2",
 	  "test3"
 	]
-	
+
 Errors
 ------
 
@@ -262,7 +262,7 @@ Example::
 	  'group': 'test:testgroup',
 	  'user': 'testuser1'
 	}
-	
+
 
 Return Values
 -------------
@@ -280,7 +280,7 @@ Errors
 	* - -1
 	  - Group doesn't exists.
 	* - -2
-	  - You aren't own this group.	
+	  - You aren't own this group.
 	* - -3
 	  - User couldn't be added.
 
@@ -300,7 +300,7 @@ Example::
 	  'test:group', # deletes whole group
 	  'test:group2/user1' # removes only user membership
 	]
-	
+
 Return Values
 -------------
 

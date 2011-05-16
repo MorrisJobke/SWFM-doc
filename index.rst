@@ -7,7 +7,10 @@
 Willkommen bei SmartWFM!
 ########################
 
-SmartWFM ist ein webbasierter Dateimanager, welcher auf dem `ExtJS <http://www.sencha.com/products/extjs/>`_ Framework basiert. Durch sein flexibles Backend und durch die Plugin und Widget-Struktur ist er sehr leicht erweiterbar.
+SmartWFM ist ein webbasierter Dateimanager, welcher auf dem `ExtJS
+<http://www.sencha.com/products/extjs/>`_ Framework basiert. Durch sein
+flexibles Backend und durch die Plugin- und Widget-Struktur ist er sehr leicht
+erweiterbar.
 
 Features
 ========
@@ -23,6 +26,6 @@ Dokumentation
 
 .. toctree::
    :maxdepth: 2
-   
+
    users/index
    devel/index
